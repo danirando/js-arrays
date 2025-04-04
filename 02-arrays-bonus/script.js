@@ -29,28 +29,11 @@ console.table(reversedTeachers);
 const longNames = [];
 
 // for (let i = 0; i < teachers.length; i++) {
-if (teachers[0].length >= 5) {
-  longNames.push(teachers[0]);
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i].length >= 5) {
+    longNames.push(teachers[i]);
+  }
 }
-if (teachers[1].length >= 5) {
-  longNames.push(teachers[1]);
-}
-if (teachers[2].length >= 5) {
-  longNames.push(teachers[2]);
-}
-if (teachers[3].length >= 5) {
-  longNames.push(teachers[3]);
-}
-if (teachers[4].length >= 5) {
-  longNames.push(teachers[4]);
-}
-if (teachers[5].length >= 5) {
-  longNames.push(teachers[5]);
-}
-if (teachers[6].length >= 5) {
-  longNames.push(teachers[6]);
-}
-// }
 
 console.table(longNames);
 
